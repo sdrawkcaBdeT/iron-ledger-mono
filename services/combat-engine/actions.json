@@ -1,0 +1,56 @@
+{
+    "tick_length": 0.05,
+    "locomotion": [
+      { "id": "walk_step",      "ticks": 11, "dist_m": 0.75, "stam": 1 },
+      { "id": "run_stride",     "ticks":  6, "dist_m": 1.35, "stam": 2 },
+      { "id": "sprint_stride",  "ticks":  5, "dist_m": 2.45, "stam": 3 },
+      { "id": "strafe_step",    "ticks":  7, "dist_m": 0.30, "stam": 2 },
+      { "id": "back_step",      "ticks":  8, "dist_m": 0.40, "stam": 2 },
+      { "id": "pivot_90",       "ticks":  5, "dist_m": 0.00, "stam": 1 },
+      { "id": "pivot_180",      "ticks":  7, "dist_m": 0.00, "stam": 1 },
+      { "id": "dodge_roll",     "ticks": 18, "dist_m": 3.00, "stam": 4 },
+      { "id": "charge_3m",      "ticks": 10, "dist_m": 3.00, "stam": 4 }
+    ],
+    "attacks": [
+      { "id": "light_slash",    "wind":  5, "hit": 3, "reco":  5, "stam": 1, "kind": "swing" },
+      { "id": "heavy_overhead", "wind":  10, "hit": 5, "reco":  9, "stam": 4, "kind": "swing" },
+      { "id": "thrust_lunge",   "wind":  7, "hit": 3, "reco":  6, "stam": 2, "kind": "thrust" },
+      { "id": "arcing_sweep",   "wind": 11, "hit": 8, "reco": 10, "stam": 3, "kind": "swing"},
+      { "id": "precise_stab",   "wind":  4, "hit": 3, "reco":  4, "stam": 1, "kind": "thrust" },
+      { "id": "wild_twohand",   "wind": 12, "hit": 7, "reco": 11, "stam": 4, "kind": "swing" },
+      { "id": "feint",          "wind":  2, "hit": 0, "reco":  2, "stam": 1, "kind": "swing" }
+    ],
+    "defence": [
+      { "id": "shield_block",    "react": 5, "active":  6, "reset": 4, "stam": 2 },
+      { "id": "weapon_parry",    "react": 4, "active":  4, "reset": 4, "stam": 1 },
+      { "id": "catch_counter",   "react": 6, "active":  4, "reset": 6, "stam": 2 },
+      { "id": "dodge_step",      "react": 6, "active":  5, "reset": 4, "stam": 2 },
+      { "id": "full_roll_evade", "react": 7, "active": 18, "reset": 0, "stam": 4 }
+    ],
+    "encumbrance_mult": {
+      "armor":  { "light": 1.00, "medium": 1.12, "heavy": 1.25 },
+      "weapon": { "light": 1.00, "medium": 1.05, "heavy": 1.10 }
+    },
+    "chains": [
+      {
+        "name": "parry_to_riposte",
+        "trigger": ["weapon_parry"],
+        "next":    ["light_slash","precise_stab","thrust_lunge"],
+        "delta":  -6                    
+      },
+      {
+        "name": "feint_flow",
+        "trigger": ["feint"],
+        "next":    ["light_slash","thrust_lunge"],
+        "delta":  -2                     
+      },
+      {
+        "name": "roll_to_backstab",
+        "trigger": ["dodge_roll"],
+        "next":    ["precise_stab","heavy_overhead"],
+        "delta":  -3,
+        "predicate": "within_flank_1m"  
+      }
+    ]
+  }
+  
