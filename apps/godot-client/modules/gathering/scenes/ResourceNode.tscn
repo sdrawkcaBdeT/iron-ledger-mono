@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://hrc51rwoarl1"]
+
+[ext_resource type="Script" uid="uid://dfgub4p737dg1" path="res://scripts/ResourceNode.gd" id="1_or0q2"]
+[ext_resource type="Texture2D" uid="uid://c88lsk73jlu45" path="res://assets/tree_32x32.png" id="2_14eoa"]
+[ext_resource type="AudioStream" uid="uid://bmw0cq074dufu" path="res://assets/GS2_Item_Acquire_1.mp3" id="3_gs4ff"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gs4ff"]
+radius = 12.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14eoa"]
+bg_color = Color(0.310617, 0.310617, 0.310617, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gs4ff"]
+bg_color = Color(0.161478, 0.680169, 0.241921, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="ResourceNode" type="Node2D"]
+script = ExtResource("1_or0q2")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_gs4ff")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.533333, 0.866667, 1, 1)
+texture = ExtResource("2_14eoa")
+
+[node name="GatherBar" type="ProgressBar" parent="."]
+visible = false
+custom_minimum_size = Vector2(48, 6)
+layout_direction = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 28.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_14eoa")
+theme_override_styles/fill = SubResource("StyleBoxFlat_gs4ff")
+max_value = 1.0
+
+[node name="CollectSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gs4ff")

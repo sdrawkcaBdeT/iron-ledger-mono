@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "patternProperties": {
+      "^[a-z0-9_]+$": {
+        "type": "object",
+        "required": ["vec", "base_price"],
+        "properties": {
+          "vec": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 9,
+            "maxItems": 9
+          },
+          "base_price": { "type": "number", "minimum": 0 }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+  

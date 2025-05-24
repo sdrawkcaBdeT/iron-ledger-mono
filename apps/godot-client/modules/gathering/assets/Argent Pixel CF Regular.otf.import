@@ -1,0 +1,35 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://2lpentkxvblx"
+path="res://.godot/imported/Argent Pixel CF Regular.otf-60631a30b9853af75b2fcd7b92d42471.fontdata"
+
+[deps]
+
+source_file="res://assets/Argent Pixel CF Regular.otf"
+dest_files=["res://.godot/imported/Argent Pixel CF Regular.otf-60631a30b9853af75b2fcd7b92d42471.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "craft_quality.schema.json",
+    "type": "object",
+    "description": "Maps quality tier → three modifier ranges",
+    "patternProperties": {
+      "^[A-Za-z_ ]+$": {
+        "type": "object",
+        "required": ["gatherSpeedRange", "durabilityRange", "moveSpeedRange"],
+        "properties": {
+          "gatherSpeedRange":  { "$ref": "#/$defs/range" },
+          "durabilityRange":   { "$ref": "#/$defs/range" },
+          "moveSpeedRange":    { "$ref": "#/$defs/range" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "$defs": {
+      "range": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    }
+  }
+  

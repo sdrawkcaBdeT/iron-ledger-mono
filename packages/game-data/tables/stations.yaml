@@ -1,0 +1,7 @@
+oven_basic:      { slots:  8, dur: 1000, tier: 1, build_lab: 24, build_cap: 2 }
+brew_kettle:     { slots: 16, dur: 1200, tier: 1, build_lab: 30, build_cap: 3 }
+forge_basic:     { slots:  4, dur: 2000, tier: 1, build_lab: 40, build_cap: 3 }
+carpenter_bench: { slots:  6, dur: 1500, tier: 1, build_lab: 35, build_cap: 2 }
+kitchen_range:   { slots: 10, dur: 1200, tier: 1, build_lab: 20, build_cap: 2 }
+loom:            { slots:  6, dur: 1800, tier: 1, build_lab: 25, build_cap: 2 }
+sawmill:         { slots: 20, dur: 2500, tier: 2, build_lab: 60, build_cap: 4 }

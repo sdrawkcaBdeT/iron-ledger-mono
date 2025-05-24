@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "patternProperties": {
+      "^[A-Za-z_ ]+$": {
+        "type": "object",
+        "required": ["gatherSpeedMult", "moveSpeedMult", "durabilityFloor"],
+        "properties": {
+          "gatherSpeedMult": { "type": "number", "minimum": 0 },
+          "moveSpeedMult":   { "type": "number", "minimum": 0 },
+          "durabilityFloor": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  }

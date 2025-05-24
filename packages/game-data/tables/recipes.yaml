@@ -1,0 +1,272 @@
+# keys can be any unique string
+
+bread_basic:
+  output: bread
+  out: 4
+  inputs: { grain: 3 }
+  labour: 1.5          # hrs / batch
+  station: oven_basic
+  time: 0.4            # in‑game days / batch
+  profession_id: "BAKER"
+  level_required: 1 # Benchmark level
+  exp_yield: 20 # EXP for BAKER
+  tool_type_required: null # Or "BAKING_TOOLS" if I define such a category
+
+beer_basic:
+  output: beer
+  out: 50
+  inputs: { grain: 1 }
+  labour: 1.0
+  station: brew_kettle
+  time: 0.5
+  profession_id: "BREWER"
+  level_required: 1
+  exp_yield: 20
+  tool_type_required: null # Or "BREWING_KIT"
+
+weapon_basic:
+  output: weapon_basic
+  out: 1
+  inputs: { ore_iron: 2, ore_coal: 1 }
+  labour: 2.0
+  station: forge_basic
+  time: 1.0
+  profession_id: "BLACKSMITH"
+  level_required: 2 # Requires some skill
+  exp_yield: 100
+  tool_type_required: "FORGE_HAMMER" # Example tool type
+
+armor_basic:
+  output: armor_basic
+  out: 1
+  inputs: { ore_iron: 3, ore_coal: 1 }
+  labour: 2.5
+  station: forge_basic
+  time: 1.2
+  profession_id: "BLACKSMITH"
+  level_required: 2
+  exp_yield: 120
+  tool_type_required: "FORGE_HAMMER"
+
+meal_meat:
+  output: meal_meat
+  out: 5
+  inputs: { beef: 1 }
+  labour: 0.5
+  station: kitchen_range
+  time: 0.2
+  profession_id: "COOK"
+  level_required: 1
+  exp_yield: 15
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_sardine:
+  output: meal_sardine
+  out: 1
+  inputs: { sardine: 1 }
+  labour: 0.2
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 1
+  exp_yield: 8
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_herring:
+  output: meal_herring
+  out: 1
+  inputs: { herring: 1 }
+  labour: 0.2
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 1
+  exp_yield: 8
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_trout:
+  output: meal_trout
+  out: 3
+  inputs: { trout: 1 }
+  labour: 0.3
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 2 # Slightly better fish
+  exp_yield: 25
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_salmon:
+  output: meal_salmon
+  out: 3
+  inputs: { salmon: 1 }
+  labour: 0.3
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 3
+  exp_yield: 40
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_swordfish:
+  output: meal_swordfish
+  out: 5
+  inputs: { swordfish: 1 }
+  labour: 0.4
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 4
+  exp_yield: 70
+  tool_type_required: "COOKING_UTENSILS"
+
+meal_shark:
+  output: meal_shark
+  out: 10
+  inputs: { shark: 1 }
+  labour: 0.6
+  station: kitchen_range
+  time: 0.1
+  profession_id: "COOK"
+  level_required: 5
+  exp_yield: 150
+  tool_type_required: "COOKING_UTENSILS"
+
+fabric_wool:
+  output: fabric # Assuming 'fabric' is a generic type, maybe rename to 'wool_fabric'
+  out: 2
+  inputs: { wool: 1 }
+  labour: 0.8
+  station: loom
+  time: 0.3
+  profession_id: "TAILOR"
+  level_required: 1
+  exp_yield: 30
+  tool_type_required: "NEEDLE_AND_THREAD"
+
+clothing_basic:
+  output: clothing
+  out: 1
+  inputs: { fabric: 2 }
+  labour: 1.0
+  station: loom
+  time: 0.5
+  profession_id: "TAILOR"
+  level_required: 2
+  exp_yield: 80
+  tool_type_required: "NEEDLE_AND_THREAD"
+
+furniture_basic:
+  output: furniture
+  out: 1
+  inputs: { wood: 5 }
+  labour: 3.0
+  station: carpenter_bench
+  time: 1.4
+  profession_id: "CARPENTER"
+  level_required: 1
+  exp_yield: 100
+  tool_type_required: "BASIC_CARPENTRY_TOOLS" # Example: saw, hammer
+
+wagon_build: # 'wagon' implies a finished good
+  output: wagon
+  out: 1
+  inputs: { wood: 25, iron_ingot: 5 } # More realistic inputs (define iron_ingot in goods)
+  labour: 6.0
+  station: carpenter_bench # And maybe forge for metal parts
+  time: 2.0
+  profession_id: "CARPENTER" # Or a specialized "Wagonwright" later
+  level_required: 4 # Wagons are complex
+  exp_yield: 500
+  tool_type_required: "ADVANCED_CARPENTRY_TOOLS"
+
+horse_cart_build: # 'horse_cart' implies a finished good
+  output: horse_cart
+  out: 1
+  inputs: { wood: 15, iron_ingot: 3 } # More realistic (define iron_ingot in goods)
+  labour: 8.0
+  station: carpenter_bench
+  time: 2.5
+  profession_id: "CARPENTER"
+  level_required: 3
+  exp_yield: 350
+  tool_type_required: "ADVANCED_CARPENTRY_TOOLS"
+
+# --- New Simple Higher-Level Recipe Examples ---
+
+# Lumberjack / Sawyer (assuming Sawyer is a branch or initial Carpenter)
+oak_planks_premium:
+  output: oak_plank # Define in goods.yaml - better than generic 'wooden_plank'
+  out: 3
+  inputs: { oak_log: 1 }
+  labour: 0.3
+  station: sawmill # From stations.yaml
+  time: 0.15
+  profession_id: "LUMBERJACK" # Or a "SAWYER" profession if you add it
+  level_required: 3 # Benchmark level, e.g., your "1.5"
+  exp_yield: 25
+  tool_type_required: "SAWMILL_TOOLS" # If specific tools for operating station
+
+# Miner / Smelter (assuming Smelter is a branch or initial Blacksmith)
+iron_ingot_smelt:
+  output: iron_ingot # Define in goods.yaml
+  out: 1
+  inputs: { ore_iron: 2, ore_coal: 1 } # Typical ratio
+  labour: 0.5
+  station: forge_basic # Or a dedicated "smelter" station
+  time: 0.3
+  profession_id: "MINER" # Or "BLACKSMITH" / "SMELTER"
+  level_required: 2 # Benchmark level, e.g., your "1.25"
+  exp_yield: 30
+  tool_type_required: "SMELTING_TOOLS"
+
+steel_ingot_smelt:
+  output: steel_ingot # Define in goods.yaml
+  out: 1
+  inputs: { iron_ingot: 1, ore_coal: 2 } # Or different recipe
+  labour: 1.0
+  station: forge_basic # Requires higher tier forge ideally
+  time: 0.6
+  profession_id: "BLACKSMITH"
+  level_required: 4 # Higher skill for steel
+  exp_yield: 150
+  tool_type_required: "ADVANCED_FORGE_TOOLS"
+
+# Blacksmith
+steel_hatchet_craft:
+  output: steel_hatchet # This MUST match a key in your goods.yaml for the tool
+  out: 1
+  inputs: { steel_ingot: 3, wood: 1 } # Needs handle
+  labour: 4.0
+  station: forge_basic
+  time: 1.5
+  profession_id: "BLACKSMITH"
+  level_required: 5 # Example
+  exp_yield: 400
+  tool_type_required: "MASTER_FORGE_HAMMER"
+
+# Carpenter
+oak_chair_fine:
+  output: oak_chair # Define in goods.yaml
+  out: 1
+  inputs: { oak_plank: 4 } # Using output from another recipe
+  labour: 2.5
+  station: carpenter_bench
+  time: 1.0
+  profession_id: "CARPENTER"
+  level_required: 3 # Example
+  exp_yield: 180
+  tool_type_required: "FINE_CARPENTRY_TOOLS"
+
+# Baker
+hearty_stew_bread_bowl: # Advanced Baker/Cook recipe
+  output: stew_bread_bowl # Define in goods.yaml
+  out: 2
+  inputs: { bread: 2, meal_meat: 1 } # Uses outputs of other recipes
+  labour: 1.0
+  station: kitchen_range # And oven for bread part
+  time: 0.5
+  profession_id: "BAKER" # Or "COOK" or a combined perk
+  level_required: 5 # Example
+  exp_yield: 200
+  tool_type_required: "ARTISAN_BAKING_TOOLS"

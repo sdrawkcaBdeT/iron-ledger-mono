@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "patternProperties": {
+      "^[a-z0-9_]+$": {
+        "type": "object",
+        "required": ["output", "out", "inputs", "labour", "station", "time"],
+        "properties": {
+          "output":  { "type": "string" },
+          "out":     { "type": "number", "minimum": 1 },
+          "inputs":  {
+            "type": "object",
+            "patternProperties": { "^[a-z0-9_]+$": { "type": "number", "minimum": 0 } }
+          },
+          "labour":  { "type": "number", "minimum": 0 },
+          "station": { "type": "string" },
+          "time":    { "type": "number", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+  

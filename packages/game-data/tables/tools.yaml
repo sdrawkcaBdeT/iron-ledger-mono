@@ -1,0 +1,55 @@
+# ---------- tools.yaml ----------
+# One row = one craftable/equippable tool.
+# Final stats are derived at runtime:
+#   final_gather_speed = baseSpeed   × material.harvestSpeedMult × quality.gatherSpeedMult × repairState.gatherSpeedMult
+#   final_durability   = baseDurability × material.durabilityMult × quality.durabilityMult
+#
+# Fields
+# ───────
+# toolClass   – what gameplay system uses it  (“pickaxe”, “hatchet”, etc.)
+# material    – default material when generated (can be overridden)
+# baseSpeed   – baseline gather speed multiplier (1.0 = reference pickaxe)
+# baseDurability – reference durability before material/quality factors
+# weightBase  – kg before material.weightFactor multiplier
+
+bronze_pickaxe:
+  toolClass: pickaxe
+  material: Bronze
+  baseSpeed: 1.00          # Bronze gets no intrinsic bonus
+  baseDurability: 500
+  weightBase: 5
+
+iron_pickaxe:
+  toolClass: pickaxe
+  material: Iron
+  baseSpeed: 1.00
+  baseDurability: 600
+  weightBase: 5
+
+steel_pickaxe:
+  toolClass: pickaxe
+  material: Steel
+  baseSpeed: 1.00
+  baseDurability: 850
+  weightBase: 5
+
+bronze_hatchet:
+  toolClass: hatchet
+  material: Bronze
+  baseSpeed: 1.05          # hatchets swing a bit faster than pickaxes
+  baseDurability: 450
+  weightBase: 4
+
+iron_hatchet:
+  toolClass: hatchet
+  material: Iron
+  baseSpeed: 1.05
+  baseDurability: 550
+  weightBase: 4
+
+steel_hatchet:
+  toolClass: hatchet
+  material: Steel
+  baseSpeed: 1.05
+  baseDurability: 750
+  weightBase: 4

@@ -1,0 +1,318 @@
+# ---------- armor.yaml ----------
+Helm:
+  armorCategory: plate
+  armorSlot: head
+  baseCoverage: 0.9
+  baseProtectionRange: [10, 15]
+  layerMultiplier: 1.0
+
+Great Helm:
+  armorCategory: plate
+  armorSlot: head
+  baseCoverage: 0.95
+  baseProtectionRange: [12, 18]
+  layerMultiplier: 1.0
+
+Visored Helmet:
+  armorCategory: plate
+  armorSlot: head
+  baseCoverage: 0.95
+  baseProtectionRange: [12, 18]
+  layerMultiplier: 1.0
+
+Breastplate:
+  armorCategory: plate
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [12, 16]
+  layerMultiplier: 1.0
+
+Cuirass:
+  armorCategory: plate
+  armorSlot: chest
+  baseCoverage: 0.95
+  baseProtectionRange: [14, 18]
+  layerMultiplier: 1.0
+
+Full Plate:
+  armorCategory: plate
+  armorSlot: chest
+  baseCoverage: 1.0
+  baseProtectionRange: [16, 22]
+  layerMultiplier: 1.0
+
+Gauntlets:
+  armorCategory: plate
+  armorSlot: hands
+  baseCoverage: 0.9
+  baseProtectionRange: [10, 15]
+  layerMultiplier: 1.0
+
+Armored Gloves:
+  armorCategory: plate
+  armorSlot: hands
+  baseCoverage: 0.8
+  baseProtectionRange: [8, 12]
+  layerMultiplier: 1.0
+
+Sabatons:
+  armorCategory: plate
+  armorSlot: feet
+  baseCoverage: 0.9
+  baseProtectionRange: [10, 15]
+  layerMultiplier: 1.0
+
+Armored Boots:
+  armorCategory: plate
+  armorSlot: feet
+  baseCoverage: 0.85
+  baseProtectionRange: [9, 13]
+  layerMultiplier: 1.0
+
+Plate Greaves:
+  armorCategory: plate
+  armorSlot: legs
+  baseCoverage: 0.9
+  baseProtectionRange: [12, 16]
+  layerMultiplier: 1.0
+
+Tassets:
+  armorCategory: plate
+  armorSlot: legs
+  baseCoverage: 0.8
+  baseProtectionRange: [10, 14]
+  layerMultiplier: 1.0
+
+Chainmail Coif:
+  armorCategory: chain
+  armorSlot: head
+  baseCoverage: 0.9
+  baseProtectionRange: [8, 12]
+  layerMultiplier: 1.0
+
+Circlet:
+  armorCategory: plate
+  armorSlot: head
+  baseCoverage: 0.3
+  baseProtectionRange: [1, 2]
+  layerMultiplier: 1.0
+  notes: Mostly ceremonial or magical potential if relevant.
+
+Chainmail Hauberk:
+  armorCategory: chain
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [8, 12]
+  layerMultiplier: 1.0
+
+Scale Armor:
+  armorCategory: scale
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [9, 13]
+  layerMultiplier: 1.0
+
+Lamellar Armor:
+  armorCategory: plate
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [9, 14]
+  layerMultiplier: 1.0
+
+Chainmail Gloves:
+  armorCategory: chain
+  armorSlot: hands
+  baseCoverage: 0.8
+  baseProtectionRange: [7, 10]
+  layerMultiplier: 1.0
+
+Reinforced Wraps:
+  armorCategory: leather
+  armorSlot: hands
+  baseCoverage: 0.7
+  baseProtectionRange: [3, 6]
+  layerMultiplier: 1.0
+
+Chain Boots:
+  armorCategory: chain
+  armorSlot: feet
+  baseCoverage: 0.8
+  baseProtectionRange: [7, 10]
+  layerMultiplier: 1.0
+
+Reinforced Sandals:
+  armorCategory: leather
+  armorSlot: feet
+  baseCoverage: 0.6
+  baseProtectionRange: [3, 6]
+  layerMultiplier: 1.0
+
+Chainmail Leggings:
+  armorCategory: chain
+  armorSlot: legs
+  baseCoverage: 0.85
+  baseProtectionRange: [7, 10]
+  layerMultiplier: 1.0
+
+Padded Leggings:
+  armorCategory: cloth
+  armorSlot: legs
+  baseCoverage: 0.9
+  baseProtectionRange: [2, 4]
+  layerMultiplier: 1.0
+
+Leather Cap:
+  armorCategory: leather
+  armorSlot: head
+  baseCoverage: 0.7
+  baseProtectionRange: [3, 5]
+  layerMultiplier: 1.0
+
+Leather Coif:
+  armorCategory: leather
+  armorSlot: head
+  baseCoverage: 0.8
+  baseProtectionRange: [4, 6]
+  layerMultiplier: 1.0
+
+Mask:
+  armorCategory: leather
+  armorSlot: head
+  baseCoverage: 0.4
+  baseProtectionRange: [2, 4]
+  layerMultiplier: 1.0
+
+Leather Jerkin:
+  armorCategory: leather
+  armorSlot: chest
+  baseCoverage: 0.8
+  baseProtectionRange: [4, 6]
+  layerMultiplier: 1.0
+
+Brigandine:
+  armorCategory: leather
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [5, 8]
+  layerMultiplier: 1.0
+
+Studded Leather Armor:
+  armorCategory: leather
+  armorSlot: chest
+  baseCoverage: 0.85
+  baseProtectionRange: [5, 7]
+  layerMultiplier: 1.0
+
+Leather Gloves:
+  armorCategory: leather
+  armorSlot: hands
+  baseCoverage: 0.8
+  baseProtectionRange: [3, 4]
+  layerMultiplier: 1.0
+
+Bracers:
+  armorCategory: leather
+  armorSlot: hands
+  baseCoverage: 0.7
+  baseProtectionRange: [3, 5]
+  layerMultiplier: 1.0
+
+Leather Boots:
+  armorCategory: leather
+  armorSlot: feet
+  baseCoverage: 0.8
+  baseProtectionRange: [3, 5]
+  layerMultiplier: 1.0
+
+Moccasins:
+  armorCategory: leather
+  armorSlot: feet
+  baseCoverage: 0.7
+  baseProtectionRange: [2, 4]
+  layerMultiplier: 1.0
+
+Leather Pants:
+  armorCategory: leather
+  armorSlot: legs
+  baseCoverage: 0.8
+  baseProtectionRange: [3, 5]
+  layerMultiplier: 1.0
+
+Leather Greaves:
+  armorCategory: leather
+  armorSlot: legs
+  baseCoverage: 0.8
+  baseProtectionRange: [4, 6]
+  layerMultiplier: 1.0
+
+Hood:
+  armorCategory: cloth
+  armorSlot: head
+  baseCoverage: 0.7
+  baseProtectionRange: [1, 2]
+
+Cloth Cap:
+  armorCategory: cloth
+  armorSlot: head
+  baseCoverage: 0.6
+  baseProtectionRange: [1, 3]
+
+Wizard Hat:
+  armorCategory: cloth
+  armorSlot: head
+  baseCoverage: 0.5
+  baseProtectionRange: [1, 2]
+
+Robe:
+  armorCategory: cloth
+  armorSlot: chest
+  baseCoverage: 0.9
+  baseProtectionRange: [1, 3]
+
+Tunic:
+  armorCategory: cloth
+  armorSlot: chest
+  baseCoverage: 0.7
+  baseProtectionRange: [1, 2]
+
+Vestments:
+  armorCategory: cloth
+  armorSlot: chest
+  baseCoverage: 0.8
+  baseProtectionRange: [1, 2]
+
+Cloth Gloves:
+  armorCategory: cloth
+  armorSlot: hands
+  baseCoverage: 0.8
+  baseProtectionRange: [1, 2]
+
+Handwraps:
+  armorCategory: cloth
+  armorSlot: hands
+  baseCoverage: 0.5
+  baseProtectionRange: [1, 2]
+
+Cloth Shoes:
+  armorCategory: cloth
+  armorSlot: feet
+  baseCoverage: 0.8
+  baseProtectionRange: [1, 2]
+
+Sandals:
+  armorCategory: cloth
+  armorSlot: feet
+  baseCoverage: 0.6
+  baseProtectionRange: [1, 2]
+
+Cloth Pants:
+  armorCategory: cloth
+  armorSlot: legs
+  baseCoverage: 0.8
+  baseProtectionRange: [1, 2]
+
+Breeches:
+  armorCategory: cloth
+  armorSlot: legs
+  baseCoverage: 0.7
+  baseProtectionRange: [1, 2]

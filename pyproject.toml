@@ -1,0 +1,50 @@
+# Currently is all the pyproject.toml files from when I had separate repos, I need to consolidate into one for this mono repo, but for now am maintaining each of the old versions here.
+
+[arena-data]
+    [build-system]
+    requires = ["setuptools>=61.0", "wheel"]
+    build-backend = "setuptools.build_meta"
+
+    [project]
+    name = "arena_data"
+    version = "0.2.1" # Incremented version
+    description = "Static data tables and configurations for Arena projects"
+    readme = "" 
+    license = {text = ""}
+        {name = "Ted Janka", email = "sdrawkcabdet@gmail.com"}
+    ]
+    requires-python = ">=3.8" # Specify your minimum Python version
+    dependencies = [
+        "PyYAML>=5.1"
+    ]
+    [tool.setuptools]
+    packages = ["arena_data", "arena_data.tables", "arena_data.schema"] # Explicitly list packages
+
+    [tool.setuptools.package-data]
+    "arena_data.tables" = ["*.yaml", "*.yml"]
+    "arena_data.schema" = ["*.json"]
+
+[economy_sim setup.cfg]
+[metadata]
+name = economy_sim
+version = 0.1.0
+
+[options]
+    packages = find:
+    install_requires =
+        fastapi>=0.110
+        uvicorn[standard]>=0.29
+        pydantic>=1.10
+        PyYAML>=6.0
+        jsonschema>=4.0
+
+    [options.packages.find]
+    include =
+        sidecar
+    exclude =
+        data
+
+[economy_sim pyproject.toml]
+    [build-system]
+    requires = ["setuptools>=61.0"]
+    build-backend = "setuptools.build_meta"

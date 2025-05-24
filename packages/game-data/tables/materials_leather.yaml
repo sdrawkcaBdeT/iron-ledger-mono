@@ -1,0 +1,30 @@
+# ---------- materials_leather.yaml ----------
+Rawhide:
+  harvestSpeedRange: [-0.05, 0.00]
+  durabilityModifierRange: [0.80, 1.00]
+  weightFactor: 0.80
+  densityRange: [0.9, 1.2]
+
+CuredLeather:
+  harvestSpeedRange: [0.00, 0.02]
+  durabilityModifierRange: [0.90, 1.10]
+  weightFactor: 0.90
+  densityRange: [1.0, 1.2]
+
+BoiledLeather:
+  harvestSpeedRange: [0.02, 0.05]
+  durabilityModifierRange: [1.00, 1.20]
+  weightFactor: 1.00
+  densityRange: [1.1, 1.4]
+
+WyvernHide:
+  harvestSpeedRange: [0.08, 0.10]
+  durabilityModifierRange: [1.20, 1.50]
+  weightFactor: 1.10
+  densityRange: [1.2, 1.6]
+
+Chitin:
+  harvestSpeedRange: [0.10, 0.12]
+  durabilityModifierRange: [1.10, 1.40]
+  weightFactor: 1.20
+  densityRange: [1.0, 1.5]

@@ -1,0 +1,14 @@
+# 1 The 9‑dimension goods vector
+# Name (short)	Meaning	Notes on scaling
+# 1 MAT	Material affinity	[1,0,0] one‑hot for wood / metal / organic then PCA‑compressed to 1 scalar (cheap dimensionality saving).	
+# 2 CAL	Consumable energy / utility	Calories for food & drink, or 0 for non‑consumables; log‑scaled so bread≈1, shark≈3.	
+# 3 COM	Comfort / fashion	0–10 subjective QoL bump (clothes 4‑6, furniture 7‑9).	
+# 4 PRE	Prestige / rarity	Captures status signalling; base = log(market price / base price).	
+# 5 DUR	Durability / lifespan	Expected uses or days before replacement (food 1, bread 2, wagon 1 200).	
+# 6 TEC	Tech factor	Minimum tech tier (0 primitive → 4 advanced).	
+# 7 LAB	Direct labour- hours per unit	Normalised to 1 = one low‑skill hour.	
+# 8 CAP	Machine slots required	Fractions allowed (0.2 oven‑minutes etc.).	
+# 9 WGT	Mass / bulk	Simplified shipping cost driver (kg or volume index).	
+
+# Why nine? It stays human‑tuneable yet covers taste (COM, PRE), economics (LAB, CAP, TEC), and logistics (WGT, MAT). Agents can run dot‑products with personal preference vectors, guilds can compute unit cost as
+# w · LAB + r · CAP + input_costs.

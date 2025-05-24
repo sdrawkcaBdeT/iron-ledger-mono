@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://b345j37ee4rsk"]
+
+[ext_resource type="Script" uid="uid://d01xf80vyy6jk" path="res://scripts/hud.gd" id="1_ahhtf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo0fn"]
+bg_color = Color(0.415686, 0.415686, 0.415686, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ysmq"]
+bg_color = Color(1, 0.921548, 0.447883, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_ahhtf")
+
+[node name="VBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SprintHUD" type="ProgressBar" parent="VBox"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 619.0
+offset_right = 18.0
+offset_bottom = 646.0
+theme_override_styles/background = SubResource("StyleBoxFlat_oo0fn")
+theme_override_styles/fill = SubResource("StyleBoxFlat_5ysmq")
+max_value = 1.0
+
+[node name="TimerLabel" type="Label" parent="VBox"]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 1.0
+offset_right = 555.0
+offset_bottom = 24.0
+text = "03:00"
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="VBox"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 63.0
+offset_bottom = 25.0
+text = "Score: 0"
+vertical_alignment = 2
+
+[node name="RemainingLabel" type="Label" parent="VBox"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 24.0
+offset_right = 153.0
+offset_bottom = 47.0
+text = "Nodes remaining: 0"

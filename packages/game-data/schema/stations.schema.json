@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "patternProperties": {
+      "^[a-z0-9_]+$": {
+        "type": "object",
+        "required": ["slots", "dur", "tier", "build_lab", "build_cap"],
+        "properties": {
+          "slots":     { "type": "integer", "minimum": 1 },
+          "dur":       { "type": "integer", "minimum": 1 },
+          "tier":      { "type": "integer", "minimum": 0 },
+          "build_lab": { "type": "number",  "minimum": 0 },
+          "build_cap": { "type": "number",  "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+  

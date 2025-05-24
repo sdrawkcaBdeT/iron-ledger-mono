@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://s2c5nflrkc8a"]
+
+[ext_resource type="Script" uid="uid://coit03txc3pm8" path="res://scripts/round_end.gd" id="1_naec3"]
+[ext_resource type="FontFile" uid="uid://2lpentkxvblx" path="res://assets/Argent Pixel CF Regular.otf" id="2_3c2c2"]
+[ext_resource type="FontFile" uid="uid://dp73dh5djckq0" path="res://assets/Source Sans 3 Semibold.otf" id="3_7rbo8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_naec3"]
+font = ExtResource("2_3c2c2")
+font_size = 48
+font_color = Color(0.999999, 0.983381, 0.504609, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+shadow_color = Color(1, 1, 1, 0.121569)
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="Theme" id="Theme_5tybl"]
+default_font = ExtResource("3_7rbo8")
+default_font_size = 32
+
+[node name="RoundEnd" type="CanvasLayer"]
+script = ExtResource("1_naec3")
+
+[node name="Panel" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 194.0
+offset_top = 101.0
+offset_right = -147.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.929412)
+
+[node name="MessageLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 173.0
+offset_right = 734.0
+offset_bottom = 234.0
+text = "You gathered 0 resources."
+label_settings = SubResource("LabelSettings_naec3")
+horizontal_alignment = 1
+
+[node name="Close" type="Button" parent="Panel"]
+process_mode = 2
+layout_mode = 0
+offset_left = 345.0
+offset_top = 267.0
+offset_right = 457.0
+offset_bottom = 331.0
+theme = SubResource("Theme_5tybl")
+theme_override_colors/font_hover_pressed_color = Color(0.41598, 0.41598, 0.41598, 1)
+theme_override_colors/font_hover_color = Color(0.982987, 1, 0.782242, 1)
+theme_override_colors/font_outline_color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+text = "Close"

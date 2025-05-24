@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": ["SkillWage", "Professions"],
+    "properties": {
+      "SkillWage": {
+        "type": "object",
+        "patternProperties": { "^[A-Z]+$": { "type": "number" } }
+      },
+      "Professions": {
+        "type": "object",
+        "patternProperties": {
+          "^[a-z_]+$": {
+            "type": "object",
+            "required": ["skill", "training_months"],
+            "properties": {
+              "skill": { "type": "string" },
+              "training_months": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    }
+  }
+  

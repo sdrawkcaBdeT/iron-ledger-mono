@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "material.schema.json",
+    "type": "object",
+    "patternProperties": {
+      "^[A-Za-z_ ]+$": {
+        "type": "object",
+        "required": ["harvestSpeedRange", "durabilityModifierRange", "weightFactor"],
+        "properties": {
+          "harvestSpeedRange":        { "$ref": "#/$defs/range" },
+          "durabilityModifierRange":  { "$ref": "#/$defs/range" },
+          "weightFactor":             { "type": "number", "minimum": 0.1 }
+        },
+        "additionalProperties": true 
+      }
+    },
+    "$defs": { "range": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 } }
+  }
+  

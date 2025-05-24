@@ -1,0 +1,30 @@
+# ---------- craft_quality.yaml ----------
+Crude:
+  gatherSpeedRange: [-0.30, -0.10]      # alias of sharpnessModFactor
+  durabilityRange:  [-0.30, -0.10]
+  moveSpeedRange:   [-0.20, -0.10]      # alias of balanceModFactor
+
+Worn:
+  gatherSpeedRange: [-0.20, -0.05]
+  durabilityRange:  [-0.20, -0.05]
+  moveSpeedRange:   [-0.10, -0.05]
+
+Adequate:
+  gatherSpeedRange: [-0.05, 0.05]
+  durabilityRange:  [-0.05, 0.05]
+  moveSpeedRange:   [-0.05, 0.05]
+
+Refined:
+  gatherSpeedRange: [0.05, 0.15]
+  durabilityRange:  [0.05, 0.15]
+  moveSpeedRange:   [0.05, 0.15]
+
+Masterwork:
+  gatherSpeedRange: [0.15, 0.25]
+  durabilityRange:  [0.15, 0.25]
+  moveSpeedRange:   [0.15, 0.25]
+
+Perfect:
+  gatherSpeedRange: [0.25, 0.35]
+  durabilityRange:  [0.25, 0.35]
+  moveSpeedRange:   [0.25, 0.35]

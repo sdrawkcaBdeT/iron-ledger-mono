@@ -1,0 +1,51 @@
+# ---------- professions.yaml ----------
+# Daily wages are in silver; training time in months.
+
+SkillWage:
+  NONE: 0
+  LOW: 6
+  HIGH: 9
+
+Professions:
+  miner:
+    skill: LOW
+    training_months: 1
+  lumberjack:
+    skill: LOW
+    training_months: 1
+  farmer:
+    skill: LOW
+    training_months: 2
+  fisher:
+    skill: LOW
+    training_months: 1
+  carpenter:
+    skill: HIGH
+    training_months: 6
+  blacksmith:
+    skill: HIGH
+    training_months: 12
+  jeweler:
+    skill: HIGH
+    training_months: 12
+  baker:
+    skill: LOW
+    training_months: 2
+  brewer:
+    skill: LOW
+    training_months: 2
+  cook:
+    skill: LOW
+    training_months: 2
+  tailor:
+    skill: HIGH
+    training_months: 8
+  treasury_officer:
+    skill: HIGH
+    training_months: 12
+  hauler:
+    skill: NONE
+    training_months: 1
+  gladiator:
+    skill: HIGH
+    training_months: 0          # trained elsewhere

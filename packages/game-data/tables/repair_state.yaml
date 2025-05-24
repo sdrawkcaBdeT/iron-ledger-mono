@@ -1,0 +1,35 @@
+# ---------- repair_state.yaml ----------
+Pristine:
+  gatherSpeedMult: 1.06
+  moveSpeedMult:   1.03
+  durabilityFloor: 0.96   # 96 % – 100 %
+
+Fine:
+  gatherSpeedMult: 1.03
+  moveSpeedMult:   1.02
+  durabilityFloor: 0.81
+
+Used:
+  gatherSpeedMult: 1.00
+  moveSpeedMult:   1.00
+  durabilityFloor: 0.61
+
+Battered:
+  gatherSpeedMult: 0.94
+  moveSpeedMult:   0.97
+  durabilityFloor: 0.41
+
+Damaged:
+  gatherSpeedMult: 0.88
+  moveSpeedMult:   0.93
+  durabilityFloor: 0.21
+
+Ruined:
+  gatherSpeedMult: 0.70
+  moveSpeedMult:   0.80
+  durabilityFloor: 0.01
+
+Destroyed:
+  gatherSpeedMult: 0.00
+  moveSpeedMult:   0.00
+  durabilityFloor: 0.00   # special: cannot equip

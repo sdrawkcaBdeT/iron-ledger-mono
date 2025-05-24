@@ -1,0 +1,161 @@
+# ---------- weapons.yaml ----------
+Stiletto Dagger:
+  weaponCategory: piercing
+  sizeRange: [80.0, 120.0]
+  contactAreaRange: [5.0, 10.0]
+  baseVelocityMultiplierRange: [1.1, 1.3]
+  notes: Narrow thrusting dagger. Excellent at penetrating gaps.
+
+Rondel Dagger:
+  weaponCategory: piercing
+  sizeRange: [90.0, 130.0]
+  contactAreaRange: [6.0, 12.0]
+  baseVelocityMultiplierRange: [1.1, 1.3]
+  notes: Triangular or circular cross-section for armor-piercing.
+
+Dirk:
+  weaponCategory: piercing
+  sizeRange: [100.0, 140.0]
+  contactAreaRange: [8.0, 15.0]
+  baseVelocityMultiplierRange: [1.1, 1.3]
+  notes: Long dagger; can slash but primarily stabbing.
+
+Gladius:
+  weaponCategory: slashing
+  sizeRange: [200.0, 300.0]
+  contactAreaRange: [10.0, 15.0]
+  baseVelocityMultiplierRange: [1.0, 1.15]
+  notes: Roman short sword, balanced for stab & slash.
+
+Cutlass:
+  weaponCategory: slashing
+  sizeRange: [300.0, 400.0]
+  contactAreaRange: [30.0, 50.0]
+  baseVelocityMultiplierRange: [1.0, 1.15]
+  notes: Short curved sword, quick chopping strikes.
+
+Falchion:
+  weaponCategory: slashing
+  sizeRange: [350.0, 450.0]
+  contactAreaRange: [40.0, 60.0]
+  baseVelocityMultiplierRange: [1.0, 1.15]
+  notes: Heavy single-edged blade with strong chopping ability.
+
+Arming Sword:
+  weaponCategory: hybrid
+  sizeRange: [400.0, 500.0]
+  contactAreaRange: [35.0, 60.0]
+  baseVelocityMultiplierRange: [1.0, 1.2]
+  notes: One-handed medieval sword, thrust or slash effectively.
+
+Bastard Sword:
+  weaponCategory: hybrid
+  sizeRange: [450.0, 600.0]
+  contactAreaRange: [35.0, 55.0]
+  baseVelocityMultiplierRange: [1.0, 1.1]
+  notes: Hand-and-a-half sword, versatile grip, moderate mass.
+
+Claymore:
+  weaponCategory: slashing
+  sizeRange: [700.0, 900.0]
+  contactAreaRange: [60.0, 100.0]
+  baseVelocityMultiplierRange: [0.8, 1.0]
+  notes: Large Scottish two-hander for heavy swings.
+
+Zweihander:
+  weaponCategory: slashing
+  sizeRange: [800.0, 1000.0]
+  contactAreaRange: [70.0, 110.0]
+  baseVelocityMultiplierRange: [0.75, 1.0]
+  notes: Massive two-handed sword, extreme momentum.
+
+Battle Axe:
+  weaponCategory: slashing
+  sizeRange: [600.0, 800.0]
+  contactAreaRange: [80.0, 120.0]
+  baseVelocityMultiplierRange: [0.7, 0.9]
+  notes: Broad head, devastating cleaves.
+
+Broad Axe:
+  weaponCategory: slashing
+  sizeRange: [500.0, 700.0]
+  contactAreaRange: [90.0, 130.0]
+  baseVelocityMultiplierRange: [0.7, 0.9]
+  notes: Wider than battle axe, slower but huge contact area.
+
+Morning Star:
+  weaponCategory: blunt
+  sizeRange: [400.0, 600.0]
+  contactAreaRange: [50.0, 70.0]
+  baseVelocityMultiplierRange: [0.95, 1.05]
+  notes: Spiked head merges blunt force with piercing.
+
+Warhammer:
+  weaponCategory: blunt
+  sizeRange: [300.0, 500.0]
+  contactAreaRange: [30.0, 60.0]
+  baseVelocityMultiplierRange: [0.95, 1.05]
+  notes: Small striking face, high pressure vs. armor.
+
+Club:
+  weaponCategory: blunt
+  sizeRange: [200.0, 400.0]
+  contactAreaRange: [40.0, 80.0]
+  baseVelocityMultiplierRange: [1.05, 1.15]
+  notes: Simple blunt weapon relying on raw mass.
+
+Maul:
+  weaponCategory: blunt
+  sizeRange: [800.0, 1200.0]
+  contactAreaRange: [100.0, 150.0]
+  baseVelocityMultiplierRange: [0.6, 0.8]
+  notes: Heavy two-handed hammer with extreme momentum.
+
+Spear:
+  weaponCategory: piercing
+  sizeRange: [500.0, 700.0]
+  contactAreaRange: [10.0, 20.0]
+  baseVelocityMultiplierRange: [0.9, 1.2]
+  notes: Long reach, small tip, excellent for thrusting.
+
+Scimitar:
+  weaponCategory: slashing
+  sizeRange: [300.0, 400.0]
+  contactAreaRange: [30.0, 50.0]
+  baseVelocityMultiplierRange: [1.0, 1.2]
+  notes: Curved blade for slicing cuts, fairly light.
+
+Trident:
+  weaponCategory: piercing
+  sizeRange: [600.0, 800.0]
+  contactAreaRange: [10.0, 15.0]
+  baseVelocityMultiplierRange: [0.8, 1.1]
+  notes: Three-pronged spear, can entangle in arena bouts.
+
+Lance:
+  weaponCategory: piercing
+  sizeRange: [1000.0, 1500.0]
+  contactAreaRange: [5.0, 10.0]
+  baseVelocityMultiplierRange: [0.5, 0.6]
+  notes: Mounted shock weapon for charging.
+
+Pike:
+  weaponCategory: piercing
+  sizeRange: [1200.0, 1600.0]
+  contactAreaRange: [5.0, 15.0]
+  baseVelocityMultiplierRange: [0.6, 0.8]
+  notes: Ultra-long spear for formation fighting.
+
+Halberd:
+  weaponCategory: hybrid
+  sizeRange: [1000.0, 1400.0]
+  contactAreaRange: [20.0, 60.0]
+  baseVelocityMultiplierRange: [0.6, 0.9]
+  notes: Polearm combining spear tip, axe blade, and hook.
+
+Glaive:
+  weaponCategory: slashing
+  sizeRange: [800.0, 1200.0]
+  contactAreaRange: [30.0, 50.0]
+  baseVelocityMultiplierRange: [0.7, 0.9]
+  notes: Polearm with single-edged blade for sweeping cuts.
